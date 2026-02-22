@@ -1,0 +1,22 @@
+﻿
+> lasagadeioannesmagnus@0.0.0 build
+> tsc -b && vite build
+
+src/components/editor/AudioPicker.tsx(2,10): error TS6133: 'Music' is declared but its value is never read.
+src/components/export/QuoteImageGenerator.tsx(4,30): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/lib/export.ts(133,26): error TS2345: Argument of type '{ margin: number[]; filename: string; image: { type: "jpeg"; quality: number; }; html2canvas: { scale: number; useCORS: boolean; }; jsPDF: { unit: string; format: string; orientation: "portrait"; }; }' is not assignable to parameter of type 'Html2PdfOptions'.
+  Types of property 'margin' are incompatible.
+    Type 'number[]' is not assignable to type 'number | [number, number] | [number, number, number, number] | undefined'.
+      Type 'number[]' is not assignable to type '[number, number] | [number, number, number, number]'.
+        Type 'number[]' is not assignable to type '[number, number, number, number]'.
+          Target requires 4 element(s) but source may have fewer.
+src/lib/exportNewspaper.ts(177,26): error TS2345: Argument of type '{ margin: number[]; filename: string; image: { type: "jpeg"; quality: number; }; html2canvas: { scale: number; useCORS: boolean; }; jsPDF: { unit: string; format: string; orientation: "portrait"; }; }' is not assignable to parameter of type 'Html2PdfOptions'.
+  Types of property 'margin' are incompatible.
+    Type 'number[]' is not assignable to type 'number | [number, number] | [number, number, number, number] | undefined'.
+      Type 'number[]' is not assignable to type '[number, number] | [number, number, number, number]'.
+        Type 'number[]' is not assignable to type '[number, number, number, number]'.
+          Target requires 4 element(s) but source may have fewer.
+src/pages/ArchivePage.tsx(2,1): error TS6133: 'CronicaCard' is declared but its value is never read.
+src/pages/ArchivePage.tsx(7,30): error TS6133: 'Calendar' is declared but its value is never read.
+src/pages/ArchivePage.tsx(7,48): error TS6133: 'ChevronDown' is declared but its value is never read.
+src/pages/ArchivePage.tsx(7,61): error TS6133: 'ChevronUp' is declared but its value is never read.
